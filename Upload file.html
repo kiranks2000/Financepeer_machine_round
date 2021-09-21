@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Financepeer</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="title">Financepeer</h1>
+      <div class="dropdown">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <div class="dropdown-drop invisible">
+        <a class="dropdown-item" href="new_recipe.html">New recipe</a>
+        <a class="dropdown-item" href="search.html">Search</a>
+        <a class="dropdown-item" href="profile.html">Profile</a>
+        <a class="dropdown-item" href="reset_password.html">Reset password</a>
+      </div>
+    </div>
+    <h1 class="welcome">File Upload</h2>
+    <div class="new-recipe">
+        <form class="recipe-form" action="new_recipe.php" method="post">
+            <input type="text" name="dishName" id="dishName" placeholder="File name">
+            <textarea placeholder="About the file"></textarea>
+            <br>
+            <span class="upload-image"></span>
+            <label for="foodImage"><div class="choose-image">Choose file</div></label>
+            <input type="file" name="foodImage" id="foodImage" class="invisible">
+            <br>
+            <button class="submit-recipe" type="submit">Add File!</button>
+        </form>
+    </div>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/file.js"></script>
+  </body>
+</html>
